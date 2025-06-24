@@ -1,5 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Light/Dark Mode Toggle
+    const toggleButton = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+    });
     const filterButtons = document.querySelectorAll('.filter-button');
     const videos = document.querySelectorAll('.video');
 
