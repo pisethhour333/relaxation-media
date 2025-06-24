@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Relaxation Media</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Gallery</h1>
+        <h1>Relaxation Media</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,33 +18,72 @@
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
-        <button id="mode-toggle">Light/Dark Mode</button>
     </header>
-
     <main>
-        <section id="video-playlist" class="fade-in">
-    <h2>Relaxing Video Playlist</h2>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/pszLUo67jXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-</section>
-
-
-   <section id="image-gallery" class="fade-in">
-    <h2>Image Gallery</h2>
-    <div class="gallery-grid">
-        <img src="https://images.pexels.com/photos/29831254/pexels-photo-29831254.jpeg" alt="Peaceful Beach Sunset with Mountain Views">
-        <img src="https://images.pexels.com/photos/30838643/pexels-photo-30838643.jpeg" alt="Mountain Lake Tranquility at Sunset">
-<img src="https://images.pexels.com/photos/32612804/pexels-photo-32612804.jpeg" alt="Portrait of a Woman Relaxing in Nature at Sunset">
-
-
-    </div>
-</section>
-
+        <section>
+            <h2>Gallery</h2>
+            <div class="filter-bar">
+                <button class="filter-button" data-category="all">All</button>
+                <button class="filter-button" data-category="nature">Nature</button>
+                <button class="filter-button" data-category="meditation">Meditation</button>
+                <button class="filter-button" data-category="ocean">Ocean Sounds</button>
+                <button class="filter-button" data-category="rain">Rain</button>
+            </div>
+            <div class="gallery">
+                <div class="video" data-category="nature">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Relaxing Ocean Waves & Piano Music</p>
+                </div>
+                <div class="video" data-category="nature">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Calm Forest Sounds</p>
+                </div>
+                <div class="video" data-category="nature">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Birds Chirping in the Forest</p>
+                </div>
+                <div class="video" data-category="meditation">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Guided Meditation</p>
+                </div>
+                <div class="video" data-category="meditation">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Deep Sleep Meditation</p>
+                </div>
+                <div class="video" data-category="meditation">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Mindfulness Meditation</p>
+                </div>
+                <div class="video" data-category="ocean">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Relaxing Ocean Waves</p>
+                </div>
+                <div class="video" data-category="ocean">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Gentle Ocean Waves</p>
+                </div>
+                <div class="video" data-category="ocean">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Ocean Waves Crashing</p>
+                </div>
+                <div class="video" data-category="rain">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>10 Hours of Rain Sounds</p>
+                </div>
+                <div class="video" data-category="rain">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Rain on Window</p>
+                </div>
+                <div class="video" data-category="rain">
+                    <iframe src="https://www.youtube.com/embed/1shZObJdO64" frameborder="0" allowfullscreen></iframe>
+                    <p>Heavy Rain and Thunder</p>
+                </div>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <p>&copy; 2023 Relaxation Media. All rights reserved.</p>
+        <p>&copy; 2023 Relaxation Media</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
