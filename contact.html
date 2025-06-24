@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Relaxation Media</title>
+    <title>Contact Us - Relaxation Media</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,14 +22,21 @@
     <main>
         <section class="contact">
             <h2>Contact Us</h2>
-            <form action="contact.php" method="post">
+            <form action="https://formspree.io/f/xnnvgklo" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
+                
+  
+<input type="hidden" name="_redirect" value="https://pisethhour.github.io/relaxation-media/thankyou.html">
+
+                
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
